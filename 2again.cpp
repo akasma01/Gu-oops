@@ -34,8 +34,10 @@ void date::addDate(int n)
         while(n>30)
         {
             n=n-30;
+            d=n;
             m++;
         }
+        
         while(m>12)
         {
             m-=12;
@@ -74,7 +76,7 @@ int main()
     d.inputDate();
     cout<<"Enter the no. of days you want to add\n";
     cin>>n;
-    d.addDate(30);
+    d.addDate(n);
     
     
     return 0;
